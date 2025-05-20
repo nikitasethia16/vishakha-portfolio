@@ -5,12 +5,6 @@
 
     // https://vite.dev/config/
     export default defineConfig({
-       build: {
-    rollupOptions: {
-      external: ['react-icons/hi'],
-    },
-  },
-      plugins: [react(), tailwindcss(),
-      ],
+      plugins: [react(), tailwindcss()],
       base : '/'
     })
