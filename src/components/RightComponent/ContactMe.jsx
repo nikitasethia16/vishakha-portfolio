@@ -56,11 +56,11 @@ const ContactMe = () => {
           </div>
         ))}
         <input type="hidden" name="_captcha" value="false"></input>
-        <input
-          type="hidden"
-          name="_next"
-          value={`https://vishakha07-portfolio.netlify.app/thank-you`}
-        />
+         <input
+        type="hidden"
+        name="_next"
+        value={`${window.location.origin}/thank-you`}
+      />
 
         <button
           type="submit"
