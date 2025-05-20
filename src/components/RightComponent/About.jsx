@@ -1,6 +1,6 @@
 import { MdOutlineArrowOutward } from "react-icons/md";
-import pdfFile from '/assets/Vishakha_jain.pdf';
-import media from '/assets/media1.jpg';
+import pdfFile from '/src/assets/Vishakha_Jain.pdf';
+import media from '/src/assets/media1.jpg';
 
 
 const About = () => {
