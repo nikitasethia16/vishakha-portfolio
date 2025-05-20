@@ -59,7 +59,7 @@ const ContactMe = () => {
         <input
           type="hidden"
           name="_next"
-          value={`${window.location.origin}/thank-you`}
+          value={`https://vishakha07-portfolio.netlify.app/thank-you`}
         />
 
         <button
