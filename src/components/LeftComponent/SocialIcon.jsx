@@ -7,13 +7,13 @@ const SocialIcons = () => {
     { label: <FaInstagram />, href: "#instagram", title: "Instagram" },
     { label: <FaLinkedinIn />, href: "#linkedin", title: "Linkedin" },
     { label: <FaFacebook />, href: "#facebook", title: "Facebook" },
-    { label: <SiGmail />, href: "#gmail", title: "Gmail" },
+    { label: <SiGmail />, href: "https://mail.google.com/mail/?view=cm&to=Vishakhaj561@gmail.com", title: "Gmail" },
   ];
 
   return (
     <>
       {iconLinks.map((e, i) => (
-        <a href={e.href} key={i} title={e.title}>
+        <a href={e.href} key={i} title={e.title} target="blank">
           <div className="border border-white text-white p-3 rounded-full hover:shadow-[inset_0_0_10px_white] transition-shadow duration-300">
             {e.label}
           </div>

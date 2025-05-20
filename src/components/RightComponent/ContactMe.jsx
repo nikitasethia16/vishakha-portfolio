@@ -37,8 +37,10 @@ const ContactMe = () => {
         Get in touch with me to provide better service. Social media success starts with a conversation let’s start.
       </p>
     <form
-      onSubmit={handleSubmit}
+      // onSubmit={handleSubmit}
       className="max-w-xl mx-auto p-6 bg-gray-900 text-white rounded-lg shadow-md space-y-4"
+      action="https://formsubmit.co/Vishakhaj561@gmail.com"
+      method="POST"
     >
 
       {formFields.map(({ name, label, type, required }) => (
@@ -70,6 +72,8 @@ const ContactMe = () => {
           )}
         </div>
       ))}
+      <input type="hidden" name="_captcha" value="false"></input>
+       {/* <input type="hidden" name="_next" value="false"></input> */}
 
       <button
         type="submit"
