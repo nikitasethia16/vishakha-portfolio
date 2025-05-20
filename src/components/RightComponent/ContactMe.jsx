@@ -11,24 +11,8 @@ const formFields = [
 ];
 
 const ContactMe = () => {
-  const initialState = formFields.reduce((acc, field) => {
-    acc[field.name] = "";
-    return acc;
-  }, {});
-
-  const [formData, setFormData] = useState(initialState);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form Submitted:", formData);
-  };
-
-  return (
+ 
+ return (
     <>
     <h2 className="mt-24 text-lg font-medium tracking-tight text-[rgb(152,243,151)] sm:text-xl text-center mb-4">
        Let's Connect
@@ -37,9 +21,8 @@ const ContactMe = () => {
         Get in touch with me to provide better service. Social media success starts with a conversation let’s start.
       </p>
     <form
-      // onSubmit={handleSubmit}
       className="max-w-xl mx-auto p-6 bg-gray-900 text-white rounded-lg shadow-md space-y-4"
-      action="https://formsubmit.co/Vishakhaj561@gmail.com"
+      action="https://formsubmit.co/7c191778ad16041f91d5656a4f9ca43c"
       method="POST"
     >
 
@@ -53,8 +36,6 @@ const ContactMe = () => {
             <textarea
               id={name}
               name={name}
-              value={formData[name]}
-              onChange={handleChange}
               rows="4"
               required={required}
               className="w-full p-2 rounded bg-gray-800 text-white"
@@ -64,8 +45,6 @@ const ContactMe = () => {
               id={name}
               name={name}
               type={type}
-              value={formData[name]}
-              onChange={handleChange}
               required={required}
               className="w-full p-2 rounded bg-gray-800 text-white"
             />
@@ -73,7 +52,7 @@ const ContactMe = () => {
         </div>
       ))}
       <input type="hidden" name="_captcha" value="false"></input>
-       {/* <input type="hidden" name="_next" value="false"></input> */}
+       <input type="hidden" name="_next" value="http://localhost:5173/thank-you"></input>
 
       <button
         type="submit"

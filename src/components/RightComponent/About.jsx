@@ -19,8 +19,8 @@ const About = () => {
         blend of creativity and data-driven strategy to every project.
       </p>
        <div className="flex gap-1 items-center text-slate-50 hover:text-[rgb(152,243,151)] transition-colors duration-200 group cursor-pointer">
-      <a href="#" className="flex items-center gap-1">
-        Download Resume
+      <a href="/src/assets/Vishakha_jain.pdf" target="_blank"  rel="noopener noreferrer" className="flex items-center gap-1">
+        View Full Résumé
         <MdOutlineArrowOutward className="transition-transform duration-200 transform group-hover:translate-x-2" />
       </a>
     </div>
