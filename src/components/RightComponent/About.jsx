@@ -27,7 +27,7 @@ const About = () => {
         <a
           href={pdfFile}
           target="_blank"
-          rel="noopener noreferrer"
+          // rel="noopener noreferrer"
           className="flex items-center gap-1"
         >
           View Full Résumé
