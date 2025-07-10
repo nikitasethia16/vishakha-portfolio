@@ -4,7 +4,7 @@ import SocialIcons from "../LeftComponent/SocialIcon";
 const formFields = [
   { name: "name", label: "Name", type: "text", required: true },
   { name: "email", label: "Email", type: "email", required: true },
-  { name: "phone", label: "Phone Number", type: "tel", required: true },
+  { name: "phone", label: "Phone Number", type: "number", required: true },
   { name: "company", label: "Your Company", type: "text", required: false },
   { name: "subject", label: "Subject", type: "text", required: true },
   {
